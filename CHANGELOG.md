@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/rdcvgt/FlexiRoster/compare/v1.0.0...v1.0.1) (2024-09-14)
+
+
+### Bug Fixes
+
+* add prerelease branch ([ff07810](https://github.com/rdcvgt/FlexiRoster/commit/ff07810ad43e94c08bc5b01bb4885605806c8769))
+
 # 1.0.0 (2024-09-14)
 
 
