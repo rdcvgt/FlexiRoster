@@ -14,5 +14,6 @@
 		],
 		"@semantic-release/github",
 		"@semantic-release/git"
-	]
+	],
+	"repositoryUrl": "https://github.com/rdcvgt/FlexiRoster.git"
 }
