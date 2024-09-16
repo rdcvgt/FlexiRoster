@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
 
 export default function Home() {
-	return <Box>1</Box>;
+	return <Box>monthly-goal</Box>;
 }
