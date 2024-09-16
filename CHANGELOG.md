@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/rdcvgt/FlexiRoster/compare/v1.0.1...v1.1.0) (2024-09-16)
+
+
+### Features
+
+* setup firebase config ([cc10c5d](https://github.com/rdcvgt/FlexiRoster/commit/cc10c5d41fb3841307bd0d8967f68113fb5c6c6c))
+
 ## [1.0.1](https://github.com/rdcvgt/FlexiRoster/compare/v1.0.0...v1.0.1) (2024-09-14)
 
 
