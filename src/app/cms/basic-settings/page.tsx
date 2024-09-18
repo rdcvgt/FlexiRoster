@@ -1,14 +1,13 @@
+"use client";
+import { useState } from "react";
 import { Box, Button, Typography } from "@mui/material";
+import CustomDialog from "@/components/Dialog";
+import JobTitleTopSection from "./JobTitleSettingDialog";
 
 export default function BasicSettings() {
 	return (
 		<>
-			<Box>
-				<Box sx={{ display: "flex", justifyContent: "space-between" }}>
-					<Typography variant="h4">職等</Typography>
-					<Button variant="contained">新增</Button>
-				</Box>
-			</Box>
+			<JobTitleTopSection />
 
 			{/* <Divider sx={{ mt: 2, mb: 2 }} /> */}
 			{/* <Box>

@@ -12,12 +12,12 @@ type Props = {
 	titleId: string;
 };
 
-export default function MaxWidthDialog({
+export default function SimpleDialog({
 	children,
 	size = "md",
 	titleId,
 }: Props) {
-	const [open, setOpen] = React.useState(false);
+	const [open, setOpen] = React.useState(!!children);
 
 	const { formatMessage } = useIntl();
 

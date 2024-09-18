@@ -1,7 +1,15 @@
 {
+	"general.close": "關閉",
+	"general.add": "新增",
+	"general.save": "儲存",
+
 	"app-name": "FlexiRoster",
 	"cms.basic-settings": "店鋪設定",
 	"cms.monthly-goal": "本月目標",
 	"cms.partner-info": "夥伴資料",
-	"cms.permission-control": "權限管理"
+	"cms.permission-control": "權限管理",
+
+	"cms.basic-settings.function-station": "職等",
+	"cms.basic-settings.function-station.add": "新增功能站",
+	"cms.basic-settings.function-station.edit": "編輯功能站"
 }
