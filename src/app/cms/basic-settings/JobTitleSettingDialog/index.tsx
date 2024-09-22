@@ -8,7 +8,25 @@ import { useIntl } from "react-intl";
 import { useState } from "react";
 import { Box, TextField, Typography } from "@mui/material";
 
-export default function JobTitleTopSection() {
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "@/utils/firebase/init";
+
+// 指定要讀取的文件路徑
+const docRef = doc(db, "stores", "gongguan", "function_station", "sl");
+
+const getUserData = async () => {
+	const docSnap = await getDoc(docRef);
+
+	if (docSnap.exists()) {
+		console.log("Document data:", docSnap.data());
+	} else {
+		console.log("No such document!");
+	}
+};
+
+getUserData();
+
+export default function FunctionStationTopSection() {
 	const [open, setOpen] = useState(false);
 
 	const { formatMessage } = useIntl();
@@ -20,6 +38,8 @@ export default function JobTitleTopSection() {
 	const handleOpen = () => {
 		setOpen(true);
 	};
+
+	const handleSave = () => {};
 
 	return (
 		<>
@@ -55,7 +75,9 @@ export default function JobTitleTopSection() {
 					<Button onClick={handleClose}>
 						{formatMessage({ id: "general.close" })}
 					</Button>
-					<Button>{formatMessage({ id: "general.save" })}</Button>
+					<Button onCLick={handleSave}>
+						{formatMessage({ id: "general.save" })}
+					</Button>
 				</DialogActions>
 			</Dialog>
 		</>

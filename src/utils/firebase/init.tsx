@@ -7,13 +7,13 @@ import { getStorage } from "firebase/storage";
 import "dotenv/config";
 
 const firebaseConfig = {
-	apiKey: process.env.FIREBASE_API_KEY,
+	apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
 	authDomain: "flexiroster.firebaseapp.com",
 	projectId: "flexiroster",
 	storageBucket: "flexiroster.appspot.com",
-	messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-	appId: process.env.FIREBASE_APP_ID,
-	measurementId: process.env.FIREBASE_MEASUREMENT_ID,
+	messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+	appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+	measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
